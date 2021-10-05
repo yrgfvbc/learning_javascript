@@ -2,3 +2,13 @@ Node:
  - asynchronos single threaded architecture (not good for cpu intensive stuff)
  - has no window or document object like normal js has on browser
  - runs chromes v8 engine
+ 
+let:
+
+If you're writing server-side JavaScript code (Node.js), you can safely use the let statement.
+
+If you're writing client-side JavaScript code and use a browser based transpiler (like Traceur or babel-standalone), you can safely use the let statement, however your code is likely to be anything but optimal with respect to performance.
+
+If you're writing client-side JavaScript code and use a Node based transpiler (like the traceur shell script or Babel), you can safely use the let statement. And because your browser will only know about the transpiled code, performance drawbacks should be limited.
+
+If you're writing client-side JavaScript code and don't use a transpiler, you need to consider browser support.
