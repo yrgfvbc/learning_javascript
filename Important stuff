@@ -1,0 +1,4 @@
+Node:
+ - asynchronos single threaded architecture (not good for cpu intensive stuff)
+ - has no window or document object like normal js has on browser
+ - runs chromes v8 engine
